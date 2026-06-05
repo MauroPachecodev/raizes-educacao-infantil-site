@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 const { title = "Raízes Educação Infantil" } = Astro.props;
 ---
 
@@ -13,13 +14,6 @@ const { title = "Raízes Educação Infantil" } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    
-    <style is:global>
-        .material-symbols-outlined { font-variation-settings: 'FILL' 1; }
-        .ambient-shadow-primary { box-shadow: 0 20px 40px -10px rgba(255, 200, 44, 0.25); }
-        .soft-card-hover { transition: all 0.3s ease; }
-        .soft-card-hover:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -12px rgba(119, 90, 0, 0.1); }
-    </style>
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden">
     <slot />

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined { font-variation-settings: 'FILL' 1; }
+.ambient-shadow-primary { box-shadow: 0 20px 40px -10px rgba(255, 200, 44, 0.25); }
+.soft-card-hover { transition: all 0.3s ease; }
+.soft-card-hover:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -12px rgba(119, 90, 0, 0.1); }

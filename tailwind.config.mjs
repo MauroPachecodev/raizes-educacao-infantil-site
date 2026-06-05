@@ -13,6 +13,7 @@ export default {
         "surface-container-low": "#f9f3e3",
         "surface-container": "#f3eede",
         "surface-container-high": "#ede8d8",
+        "surface-container-highest": "#e8e2d3",
         "surface": "#fff9e9",
         "on-surface": "#1d1c12",
         "background": "#fff9e9",
@@ -20,10 +21,12 @@ export default {
         "primary": "#775a00",
         "secondary": "#006e2a",
         "secondary-fixed": "#8dfa9b",
+        "secondary-container": "#8af798",
         "tertiary": "#00639d",
         "tertiary-container": "#acd4ff",
         "outline-variant": "#d2c5ac",
-        "outline": "#817661"
+        "outline": "#817661",
+        "primary-fixed": "#ffdf98"
       },
       fontFamily: {
         "headline-xl-mobile": ["Plus Jakarta Sans"],
@@ -36,5 +39,8 @@ export default {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries')
+  ],
 }
