@@ -1,22 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="A Escola - Raízes Educação Infantil">
-  <Header />
-  
-  <main>
-    <section class="relative pt-xl pb-xl px-md overflow-hidden flex flex-col items-center justify-center min-h-[70vh]">
+  <main class="grow">
+    <section class="relative pt-xl pb-xl px-md overflow-hidden flex flex-col items-center justify-center min-h-70vh">
       <div class="absolute top-0 left-0 w-full h-full pointer-events-none z-0 opacity-40">
-        <div class="absolute top-[-10%] left-[-5%] w-[40vw] h-[40vw] rounded-full bg-secondary-container blur-[80px]"></div>
-        <div class="absolute bottom-[-10%] right-[-5%] w-[50vw] h-[50vw] rounded-full bg-primary-fixed blur-[100px]"></div>
+        <div class="absolute top--10% left--5% w-40vw h-40vw rounded-full bg-secondary-container blur-[80px]"></div>
+        <div class="absolute bottom--10% right--5% w-50vw h-50vw rounded-full bg-primary-fixed blur-[100px]"></div>
       </div>
       <div class="max-w-container-max mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
         <div class="flex flex-col gap-md text-left">
           <div class="inline-flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full w-fit">
-            <span class="material-symbols-outlined text-secondary text-sm" data-icon="auto_awesome">auto_awesome</span>
+            <span class="material-symbols-outlined text-secondary text-sm">auto_awesome</span>
             <span class="font-label-md text-label-md text-secondary">Bem-vindos à Raízes</span>
           </div>
           <h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-on-surface">
@@ -25,8 +21,13 @@ import Footer from '../components/Footer.astro';
           <p class="font-body-lg text-body-lg text-on-surface-variant mt-sm max-w-[90%]">
             Nossa missão é proporcionar um ambiente seguro, acolhedor e estimulante, onde cada criança é vista como um indivíduo único, capaz de construir seu próprio conhecimento através da alegria e da descoberta.
           </p>
+          <div class="mt-md flex gap-sm">
+            <a href="/turmas" class="bg-primary-container text-on-primary-container font-label-md text-label-md px-lg py-sm rounded-full hover:-translate-y-1 hover:ambient-shadow-primary transition-all duration-300 inline-block">
+              Conheça o Espaço
+            </a>
+          </div>
         </div>
-        <div class="relative w-full aspect-square rounded-[2rem] overflow-hidden shadow-none soft-card-hover ambient-shadow-primary">
+        <div class="relative w-full aspect-square rounded-4xl overflow-hidden shadow-none soft-card-hover ambient-shadow-primary">
           <img alt="Crianças brincando" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2JvyoXFWCqw0y28QZ9ytoLsZROJR6cT24Y1qn6ql4D8IRM4MVJ0R8eqz0YcEcP2sSS3JynUnAlPcPBS8c2jDuMe53iYKPDq2N4N2KqSdK2Bvnww63uLdd_ndBHkPf67LQlGSI4BCC8cQ-z4MN84UHP1QH628mZ8JHEuZQ7v_Mae9Vv1-bz40gz1keA6iCZHEdQt0w2723sevdzDHhRBuw8J_w97FQjO17UnKjzxSQZTWZbD8zRGC16EjH7ZrfSwS1qNEcQ6YiII_v"/>
         </div>
       </div>
@@ -38,9 +39,9 @@ import Footer from '../components/Footer.astro';
           <h2 class="font-headline-lg text-headline-lg text-on-surface">Nossa Proposta Lúdica</h2>
           <p class="font-body-md text-body-md text-on-surface-variant">Acreditamos que o desenvolvimento integral acontece de forma natural quando a criança se sente segura para explorar o mundo ao seu redor.</p>
         </div>
-        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
           <div class="md:col-span-2 bg-surface rounded-2xl p-lg border border-outline-variant soft-card-hover flex flex-col md:flex-row gap-md items-center overflow-hidden relative">
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-primary-fixed rounded-full blur-2xl opacity-50"></div>
             <div class="flex-1 flex flex-col gap-sm z-10">
               <div class="bg-secondary-container w-12 h-12 rounded-full flex items-center justify-center mb-sm">
                 <span class="material-symbols-outlined text-secondary">extension</span>
@@ -49,10 +50,69 @@ import Footer from '../components/Footer.astro';
               <p class="font-body-md text-body-md text-on-surface-variant">O brincar é a linguagem universal da infância. Nossa rotina é desenhada para transformar cada atividade lúdica em uma oportunidade profunda de aprendizado cognitivo e motor.</p>
             </div>
           </div>
+          <div class="bg-surface rounded-2xl p-md border border-outline-variant soft-card-hover flex flex-col gap-sm relative overflow-hidden">
+            <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-tertiary-fixed rounded-full blur-[30px] opacity-40"></div>
+            <div class="bg-tertiary-container w-10 h-10 rounded-full flex items-center justify-center mb-xs z-10">
+              <span class="material-symbols-outlined text-tertiary">psychology</span>
+            </div>
+            <h3 class="font-label-md text-label-md text-on-surface z-10">Desenvolvimento Sócio-emocional</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant z-10">Focamos na empatia, colaboração e no reconhecimento de sentimentos desde os primeiros passos.</p>
+          </div>
+          <div class="bg-primary-container rounded-2xl p-md soft-card-hover flex flex-col gap-sm justify-between ambient-shadow-primary">
+            <div>
+              <span class="material-symbols-outlined text-on-primary-container text-3xl mb-sm">palette</span>
+              <h3 class="font-headline-md text-headline-md text-on-primary-container">Expressão Criativa</h3>
+            </div>
+            <p class="font-body-md text-body-md text-on-primary-container">Arte, música e movimento como pilares da nossa expressão diária.</p>
+          </div>
+          <div class="md:col-span-2 bg-surface rounded-2xl p-md border border-outline-variant soft-card-hover flex items-center gap-md">
+            <img alt="Material Didático" class="w-32 h-32 object-cover rounded-xl hidden sm:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo7HS3Pge4zwtXOaHzw6fxtEaaki0s3XNH_O7xfBb1IK0F7T9GzgRNZAl0Dn94uwosOMxwcEQub_qzRFMC667rnwq3hrxaG8e9Y-qzemA37Cr81ngemq7lOxT4TpcuoeGiv92wd7tbkZkroDxiLbpa7RkAknuwUd9nLw5Twbwd6Ksbsm5Ee_Rh1kF9pKjCE5Z7bS76I1DPMCVU3OjkDNBJggG8qRcx1TpH52Xl7TvbMmd7PDfHzx0CDM_9TSsHO8qo9yfVf4h1r3qk"/>
+            <div class="flex flex-col gap-xs">
+              <h3 class="font-label-md text-label-md text-on-surface">Materiais Táteis e Naturais</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">Priorizamos brinquedos e materiais pedagógicos que estimulam os sentidos e conectam a criança com texturas naturais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-xl px-md bg-background">
+      <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+        <div class="md:col-span-5 flex flex-col gap-lg order-2 md:order-1">
+          <div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Estrutura Segura e Colorida</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Cada centímetro da Raízes foi projetado pensando no tamanho e nas necessidades dos nossos pequenos. Cantos arredondados, pisos adequados e muita cor compõem nosso espaço.</p>
+          </div>
+          <ul class="flex flex-col gap-md">
+            <li class="flex items-start gap-sm">
+              <div class="mt-1 bg-secondary-fixed-dim w-8 h-8 rounded-full flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-on-secondary-fixed text-sm">shield_person</span>
+              </div>
+              <div>
+                <h4 class="font-label-md text-label-md text-on-surface">Segurança em Primeiro Lugar</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-xs">Controle rigoroso de acesso e ambientes monitorados para a tranquilidade das famílias.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-sm">
+              <div class="mt-1 bg-primary-fixed w-8 h-8 rounded-full flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-on-primary-fixed text-sm">park</span>
+              </div>
+              <div>
+                <h4 class="font-label-md text-label-md text-on-surface">Áreas Externas Verdes</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant text-sm mt-xs">Contato com a natureza garantido através de nossos pátios abertos e mini-horta.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-2 gap-sm order-1 md:order-2">
+          <div class="flex flex-col gap-sm translate-y-8">
+            <img alt="Sala de aula colorida" class="rounded-4xl w-full aspect-4/5 object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0aW5BhMRZz12fq7c1YU4tKkKziAd5pVOu888mgPuWFh5bwoS0adE68_6CmbEfOmv0NLynzGIKitIV4b0aa7XYjnRO41IowvkuLIy7s9bEQOKtA7fUrRxmub4VuY8sGyJyQ-_LzK_lfAuHACc0NNCgnPTM-Mjt5F6DxL0qU8jsjQTKD43ovjZkVmG5l9NpPDWhAfyetNYVyp2BokNZ6nopow1z8tfMA4kE1v6ksZ_fB5W6H1zctwNLrOCF6KE2i749mb-OLxOcze9H"/>
+          </div>
+          <div class="flex flex-col gap-sm">
+            <img alt="Parquinho ao ar livre" class="rounded-4xl w-full aspect-4/5 object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsypIWUNs2hKBD6N4rhpE69M4sGPNKq9Y4id2vOZWf6AFcF19LFAqitxww3UBpf_0LKNz_aud4uOSwBj4dJfFjb5vB4y7SM-VZlPiCHFvzPWzDWvpAjk4DB3N34KzNtZnoFcMZfPc9D8rlk5pAMxsIwHwtysHvLqZbT1rYapXqzpKUj9hQwmGWgGhRdVvYvJJ_TFiFxrdDGLmWT1-7wDCNfKSyCuWo1rbz-X5_zYU7qrUNDtV0ZUhdCICCTYIvdD1nyNI23kNX7N1r"/>
+          </div>
         </div>
       </div>
     </section>
   </main>
-
-  <Footer />
 </Layout>
