@@ -1,0 +1,32 @@
+---
+// src/components/Hero.astro
+---
+
+<section class="relative pt-xl pb-xl px-md overflow-hidden flex flex-col items-center justify-center min-h-70vh">
+  <div class="absolute top-0 left-0 w-full h-full pointer-events-none z-0 opacity-40">
+    <div class="absolute top--10% left--5% w-40vw h-40vw rounded-full bg-secondary-container blur-[80px]"></div>
+    <div class="absolute bottom--10% right--5% w-50vw h-50vw rounded-full bg-primary-fixed blur-[100px]"></div>
+  </div>
+  <div class="max-w-container-max mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+    <div class="flex flex-col gap-md text-left">
+      <div class="inline-flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full w-fit">
+        <span class="material-symbols-outlined text-secondary text-sm">auto_awesome</span>
+        <span class="font-label-md text-label-md text-secondary">Bem-vindos à Raízes</span>
+      </div>
+      <h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-on-surface">
+        Onde brincar é a nossa forma de crescer e florescer.
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mt-sm max-w-[90%]">
+        Nossa missão é proporcionar um ambiente seguro, acolhedor e estimulante, onde cada criança é vista como um indivíduo único, capaz de construir seu próprio conhecimento através da alegria e da descoberta.
+      </p>
+      <div class="mt-md flex gap-sm">
+        <a href="/turmas" class="bg-primary-container text-on-primary-container font-label-md text-label-md px-lg py-sm rounded-full hover:-translate-y-1 hover:ambient-shadow-primary transition-all duration-300 inline-block">
+          Conheça o Espaço
+        </a>
+      </div>
+    </div>
+    <div class="relative w-full aspect-square rounded-4xl overflow-hidden shadow-none soft-card-hover ambient-shadow-primary">
+      <img alt="Crianças brincando" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2JvyoXFWCqw0y28QZ9ytoLsZROJR6cT24Y1qn6ql4D8IRM4MVJ0R8eqz0YcEcP2sSS3JynUnAlPcPBS8c2jDuMe53iYKPDq2N4N2KqSdK2Bvnww63uLdd_ndBHkPf67LQlGSI4BCC8cQ-z4MN84UHP1QH628mZ8JHEuZQ7v_Mae9Vv1-bz40gz1keA6iCZHEdQt0w2723sevdzDHhRBuw8J_w97FQjO17UnKjzxSQZTWZbD8zRGC16EjH7ZrfSwS1qNEcQ6YiII_v"/>
+    </div>
+  </div>
+</section>
