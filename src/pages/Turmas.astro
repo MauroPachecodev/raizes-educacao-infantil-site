@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Turmas e Rotina - Raízes Educação Infantil">
+  <main class="max-w-container-max mx-auto px-md py-xl space-y-xl grow">
+    
+    <header class="text-center space-y-md max-w-3xl mx-auto pt-xl">
+      <h1 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl text-primary">Turmas e Rotina</h1>
+      <p class="text-body-lg text-on-surface-variant">
+        Descubra como organizamos nossos dias para proporcionar um ambiente seguro, estimulante e repleto de descobertas para cada fase do desenvolvimento infantil (2 a 6 anos).
+      </p>
+    </header>
+
+    <section class="space-y-lg">
+      <h2 class="text-headline-lg text-secondary text-center">Nossas Turmas</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+        <div class="bg-surface-container rounded-2xl p-md border border-outline-variant/30 hover:shadow-ambient-secondary transition-all duration-300 group">
+          <div class="bg-secondary-container w-16 h-16 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
+            <span class="material-symbols-outlined text-on-secondary-container text-headline-xl">cruelty_free</span>
+          </div>
+          <div class="space-y-sm">
+            <span class="inline-block bg-primary-container/20 text-on-primary-container px-sm py-xs rounded-full font-label-md">2 a 3 anos</span>
+            <h3 class="text-headline-md text-secondary">Sementinhas</h3>
+            <p class="text-body-md text-on-surface-variant">Foco na exploração sensorial, desenvolvimento motor e primeiras interações sociais em um ambiente acolhedor.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container rounded-2xl p-md border border-outline-variant/30 hover:shadow-ambient-secondary transition-all duration-300 group">
+          <div class="bg-tertiary-container w-16 h-16 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
+            <span class="material-symbols-outlined text-on-tertiary-container text-headline-xl">palette</span>
+          </div>
+          <div class="space-y-sm">
+            <span class="inline-block bg-tertiary-container/20 text-on-tertiary-container px-sm py-xs rounded-full font-label-md">4 a 5 anos</span>
+            <h3 class="text-headline-md text-secondary">Brotinhos</h3>
+            <p class="text-body-md text-on-surface-variant">Estímulo à criatividade, linguagem e resolução de problemas através de projetos artísticos e brincadeiras direcionadas.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container rounded-2xl p-md border border-outline-variant/30 hover:shadow-ambient-secondary transition-all duration-300 group">
+          <div class="bg-primary-container w-16 h-16 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
+            <span class="material-symbols-outlined text-on-primary-container text-headline-xl">local_florist</span>
+          </div>
+          <div class="space-y-sm">
+            <span class="inline-block bg-secondary-container/30 text-on-secondary-container px-sm py-xs rounded-full font-label-md">5 a 6 anos</span>
+            <h3 class="text-headline-md text-secondary">Florescer</h3>
+            <p class="text-body-md text-on-surface-variant">Preparação para a alfabetização com autonomia, pensamento crítico e muita exploração da natureza e do mundo ao redor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-high rounded-2xl p-lg space-y-lg relative overflow-hidden">
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+      
+      <h2 class="text-headline-lg text-primary text-center relative z-10">Um Dia na Raízes</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-xl relative z-10">
+        <div class="rounded-2xl overflow-hidden h-64 md:h-full bg-surface-variant bg-cover bg-center shadow-sm" style="background-image: url('/foto-rotina.jpg');">
+        </div>
+        
+        <div class="space-y-md">
+          <div class="flex items-start gap-sm">
+            <span class="material-symbols-outlined text-secondary mt-1">sunny</span>
+            <div>
+              <h4 class="text-headline-md text-on-surface">Manhã de Acolhimento</h4>
+              <p class="text-body-md text-on-surface-variant">Chegada, roda de música e conversa para iniciar o dia com alegria e conexão.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-sm">
+            <span class="material-symbols-outlined text-secondary mt-1">park</span>
+            <div>
+              <h4 class="text-headline-md text-on-surface">Exploração ao Ar Livre</h4>
+              <p class="text-body-md text-on-surface-variant">Tempo livre e atividades dirigidas no quintal, em contato com a terra, plantas e ar fresco.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-sm">
+            <span class="material-symbols-outlined text-secondary mt-1">brush</span>
+            <div>
+              <h4 class="text-headline-md text-on-surface">Oficinas Criativas</h4>
+              <p class="text-body-md text-on-surface-variant">Artes plásticas, contação de histórias ou atividades sensoriais focadas no desenvolvimento motor.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-sm">
+            <span class="material-symbols-outlined text-secondary mt-1">restaurant</span>
+            <div>
+              <h4 class="text-headline-md text-on-surface">Nutrição e Descanso</h4>
+              <p class="text-body-md text-on-surface-variant">Almoço balanceado seguido de um momento tranquilo para leitura ou sono, respeitando o ritmo de cada criança.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Layout>
