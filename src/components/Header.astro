@@ -1,9 +1,9 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1); // remove o slash inicial
+const currentPath = pathname.replace(/^\/|\/$/g, '');
 ---
 
-<header class=" docked full-width top-0 sticky z-50 bg-surface-container-low/90 dark:bg-surface-container-low/90 border-b border-surface-container-highest backdrop-blur-md transition-all duration-300">
+<header class="docked full-width top-0 sticky z-50 bg-surface-container-low/90 dark:bg-surface-container-low/90 border-b border-surface-container-highest backdrop-blur-md transition-all duration-300">
   <div class="flex justify-between items-center px-md py-sm max-w-container-max mx-auto w-full">
     <a class="flex items-center gap-base" href="/">
       <img alt="Raízes Logo" class="h-12 w-12 object-contain rounded-full" src="/Logo.jpeg"> 
@@ -14,7 +14,7 @@ const currentPath = pathname.slice(1); // remove o slash inicial
       <a class={`hover:text-primary transition-colors duration-200 ${currentPath === '' ? 'text-primary font-bold border-b-2 border-primary pb-1' : 'text-on-surface-variant'}`} href="/">
         A Escola
       </a>
-      <a class={`hover:text-primary transition-colors duration-200 ${currentPath === 'turmas' ? 'text-primary font-bold border-b-2 border-primary pb-1' : 'text-on-surface-variant'}`} href="/Turmas">
+      <a class={`hover:text-primary transition-colors duration-200 ${currentPath === 'Turmas' ? 'text-primary font-bold border-b-2 border-primary pb-1' : 'text-on-surface-variant'}`} href="/Turmas">
         Turmas e Rotina
       </a>
     </nav>
