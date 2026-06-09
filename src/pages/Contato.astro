@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contato - Raízes Educação Infantil">
+
+  <main class="bg-[#FDFBF6] font-sans relative overflow-hidden min-h-screen">
+    <div class="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-[#FFF9D6] rounded-full blur-[120px] opacity-70 z-0 pointer-events-none"></div>
+    <div class="absolute top-[-5%] right-[-5%] w-[50%] h-[50%] bg-[#E8F3E8] rounded-full blur-[120px] opacity-60 z-0 pointer-events-none"></div>
+
+    <div class="relative z-10">
+      <section class="pt-24 pb-10 px-4 text-center max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-[#1F1F1F] mb-6 tracking-tight">
+          Venha nos visitar
+        </h1>
+        <p class="text-lg md:text-xl text-[#555] leading-relaxed">
+          Estamos de portas abertas para receber sua família. Preencha o formulário abaixo para agendarmos uma visita e conhecermos melhor as necessidades do seu pequeno.
+        </p>
+      </section>
+
+      <section class="pb-24 px-4 max-w-4xl mx-auto">
+        <div class="bg-[#FDFBF6]/80 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-[#EBE3D5] shadow-sm">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex flex-col gap-2">
+                <label for="nome" class="text-sm font-semibold text-[#333]">Nome do Responsável</label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">person</span>
+                  <input 
+                    type="text" 
+                    id="nome" 
+                    placeholder="Como podemos te chamar?" 
+                    class="w-full pl-12 pr-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#FBC02D] focus:border-transparent transition-all placeholder:text-gray-400" 
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="email" class="text-sm font-semibold text-[#333]">E-mail</label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">mail</span>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="seu@email.com" 
+                    class="w-full pl-12 pr-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#FBC02D] focus:border-transparent transition-all placeholder:text-gray-400" 
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="telefone" class="text-sm font-semibold text-[#333]">Telefone / WhatsApp</label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">call</span>
+                  <input 
+                    type="tel" 
+                    id="telefone" 
+                    placeholder="(00) 00000-0000" 
+                    class="w-full pl-12 pr-4 py-3.5 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#FBC02D] focus:border-transparent transition-all placeholder:text-gray-400" 
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label for="idade" class="text-sm font-semibold text-[#333]">Idade da Criança</label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">mood</span>
+                  <select 
+                    id="idade" 
+                    class="w-full pl-12 pr-10 py-3.5 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#FBC02D] focus:border-transparent transition-all appearance-none text-gray-500 invalid:text-gray-400"
+                    required
+                  >
+                    <option value="" disabled selected hidden>Selecione a idade</option>
+                    <option value="2" class="text-black">2 a 3 anos</option>
+                    <option value="4" class="text-black">4 a 5 anos</option>
+                    <option value="5" class="text-black">5 a 6 anos</option>
+                  </select>
+                  <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">expand_more</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 mt-6">
+              <label for="mensagem" class="text-sm font-semibold text-[#333]">Mensagem (Opcional)</label>
+              <textarea 
+                id="mensagem" 
+                rows="4" 
+                placeholder="Conte-nos um pouco sobre o que você procura..." 
+                class="w-full px-5 py-4 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#FBC02D] focus:border-transparent transition-all resize-none placeholder:text-gray-400"
+              ></textarea>
+            </div>
+
+            <div class="flex justify-center pt-8">
+              <button 
+                type="submit" 
+                class="bg-[#FBC02D] hover:bg-[#F9A825] text-[#333] font-semibold py-3.5 px-8 rounded-full flex items-center gap-2 transition-colors duration-300 shadow-sm"
+              >
+                Agendar Visita
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="text-center mt-12 text-[#555]">
+          Prefere ligar? <a href="tel:+550000000000" class="font-bold text-[#837050] hover:underline transition-all">Fale conosco agora</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+</Layout>
