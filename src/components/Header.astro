@@ -37,25 +37,25 @@ const currentPath = pathname.replace(/^\/|\/$/g, '');
 
 <aside 
   id="mobile-sidebar" 
-  class="fixed top-0 right-0 w-[80vw] h-screen bg-[#FFF9EA] z-[100] transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col md:hidden">
+  class="fixed top-0 right-0 w-[80vw] h-[100dvh] bg-[#FFF9EA] z-[100] transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col md:hidden">
   
-  <div class="p-6 flex justify-end items-center border-b border-black/10">
+  <div class="p-6 flex justify-between items-center border-b border-black/10 shrink-0">
+    <img src="/Logo.jpeg" alt="Logo Raízes" class="h-10 w-auto rounded-full" />
     <button id="close-menu-btn" class="text-primary hover:bg-black/5 rounded-full p-2 transition-colors flex items-center justify-center">
       <span class="material-symbols-outlined text-headline-lg">close</span>
     </button>
   </div>
 
-  <nav class="flex flex-col gap-6 p-6 flex-1">
+  <nav class="flex flex-col gap-6 p-6 flex-1 overflow-y-auto">
     <a href="/" class="text-primary font-bold text-label-md hover:opacity-75 transition-opacity">A Escola</a>
     <a href="/Turmas" class="text-primary font-bold text-label-md hover:opacity-75 transition-opacity">Turmas e Rotina</a>
   </nav>
 
-  <div class="p-6">
+  <div class="p-6 shrink-0">
     <a href="/Contato">
-      <button class="w-full bg-primary-container text-on-primary-container py-md px-md rounded-full font-label-md font-bold hover:brightness-95 transition-all">
-        Quero Matricular
-      </button>
-    </a>
+    <button class="w-full bg-primary-container text-on-primary-container py-md px-md rounded-full font-label-md font-bold hover:brightness-95 transition-all">
+      Quero Matricular
+    </button> </a>
   </div>
 </aside>
 
