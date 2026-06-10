@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TurmaCard from '../components/TurmaCard.astro'; // Ajuste o caminho se necessário
 ---
 
 <Layout title="Turmas e Rotina - Raízes Educação Infantil">
@@ -16,38 +17,38 @@ import Layout from '../layouts/Layout.astro';
       <h2 class="text-headline-lg text-secondary text-center">Nossas Turmas</h2>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-        <div class="bg-surface-container rounded-2xl p-md border border-outline-variant/30 hover:shadow-ambient-secondary transition-all duration-300 group">
-          <div class="bg-secondary-container w-16 h-16 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
-            <span class="material-symbols-outlined text-on-secondary-container text-headline-xl">cruelty_free</span>
-          </div>
-          <div class="space-y-sm">
-            <span class="inline-block bg-primary-container/20 text-on-primary-container px-sm py-xs rounded-full font-label-md">2 a 3 anos</span>
-            <h3 class="text-headline-md text-secondary">Sementinhas</h3>
-            <p class="text-body-md text-on-surface-variant">Foco na exploração sensorial, desenvolvimento motor e primeiras interações sociais em um ambiente acolhedor.</p>
-          </div>
-        </div>
+        <TurmaCard 
+          title="Sementinhas"
+          age="2 a 3 anos"
+          description="Foco na exploração sensorial, desenvolvimento motor e primeiras interações sociais em um ambiente acolhedor."
+          icon="cruelty_free"
+          iconBg="bg-secondary-container"
+          iconColor="text-on-secondary-container"
+          tagBg="bg-primary-container/20"
+          tagColor="text-on-primary-container"
+        />
 
-        <div class="bg-surface-container rounded-2xl p-md border border-outline-variant/30 hover:shadow-ambient-secondary transition-all duration-300 group">
-          <div class="bg-tertiary-container w-16 h-16 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
-            <span class="material-symbols-outlined text-on-tertiary-container text-headline-xl">palette</span>
-          </div>
-          <div class="space-y-sm">
-            <span class="inline-block bg-tertiary-container/20 text-on-tertiary-container px-sm py-xs rounded-full font-label-md">4 a 5 anos</span>
-            <h3 class="text-headline-md text-secondary">Brotinhos</h3>
-            <p class="text-body-md text-on-surface-variant">Estímulo à criatividade, linguagem e resolução de problemas através de projetos artísticos e brincadeiras direcionadas.</p>
-          </div>
-        </div>
+        <TurmaCard 
+          title="Brotinhos"
+          age="4 a 5 anos"
+          description="Estímulo à criatividade, linguagem e resolução de problemas através de projetos artísticos e brincadeiras direcionadas."
+          icon="palette"
+          iconBg="bg-tertiary-container"
+          iconColor="text-on-tertiary-container"
+          tagBg="bg-tertiary-container/20"
+          tagColor="text-on-tertiary-container"
+        />
 
-        <div class="bg-surface-container rounded-2xl p-md border border-outline-variant/30 hover:shadow-ambient-secondary transition-all duration-300 group">
-          <div class="bg-primary-container w-16 h-16 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
-            <span class="material-symbols-outlined text-on-primary-container text-headline-xl">local_florist</span>
-          </div>
-          <div class="space-y-sm">
-            <span class="inline-block bg-secondary-container/30 text-on-secondary-container px-sm py-xs rounded-full font-label-md">5 a 6 anos</span>
-            <h3 class="text-headline-md text-secondary">Florescer</h3>
-            <p class="text-body-md text-on-surface-variant">Preparação para a alfabetização com autonomia, pensamento crítico e muita exploração da natureza e do mundo ao redor.</p>
-          </div>
-        </div>
+        <TurmaCard 
+          title="Florescer"
+          age="5 a 6 anos"
+          description="Preparação para a alfabetização com autonomia, pensamento crítico e muita exploração da natureza e do mundo ao redor."
+          icon="local_florist"
+          iconBg="bg-primary-container"
+          iconColor="text-on-primary-container"
+          tagBg="bg-secondary-container/30"
+          tagColor="text-on-secondary-container"
+        />
       </div>
     </section>
 

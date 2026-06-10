@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  age: string;
+  description: string;
+  icon: string;
+  iconBg: string;
+  iconColor: string;
+  tagBg: string;
+  tagColor: string;
+}
+
+const { title, age, description, icon, iconBg, iconColor, tagBg, tagColor } = Astro.props;
+---
+
+<div class="bg-surface-container rounded-2xl p-md border border-outline-variant/30 hover:shadow-ambient-secondary transition-all duration-300 group">
+  <div class={`w-16 h-16 rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300 ${iconBg}`}>
+    <span class={`material-symbols-outlined text-headline-xl ${iconColor}`}>{icon}</span>
+  </div>
+  <div class="space-y-sm">
+    <span class={`inline-block px-sm py-xs rounded-full font-label-md ${tagBg} ${tagColor}`}>
+      {age}
+    </span>
+    <h3 class="text-headline-md text-secondary">{title}</h3>
+    <p class="text-body-md text-on-surface-variant">{description}</p>
+  </div>
+</div>
